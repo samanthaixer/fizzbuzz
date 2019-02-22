@@ -17,4 +17,14 @@ describe 'fizzbuzz' do
   it 'returns "buzz" when passed 5' do
     expect(5.fizzbuzz).to eq 'buzz'
   end
+
+  it 'returns "buzz" when passed a multiple of 5' do
+    expect(10.fizzbuzz).to eq 'buzz'
+    expect(20.fizzbuzz).to eq 'buzz'
+    expect(40.fizzbuzz).to eq 'buzz'
+  end
+
+  it 'returns "fizzbuzz" when passed 15' do
+    expect(15.fizzbuzz).to eq 'fizzbuzz'
+  end
 end
